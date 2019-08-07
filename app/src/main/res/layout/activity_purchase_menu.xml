@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-44dp"
+        tools:ignore="MissingConstraints"
+        android:id="@+id/totallay"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="221dp"
+            android:layout_height="140dp"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:foregroundGravity="top"
+            app:srcCompat="@android:drawable/ic_menu_gallery"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="0dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="125dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/PProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:fontFamily="serif"
+                    android:lineSpacingExtra="18sp"
+                    android:text="Product"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    tools:layout_editor_absoluteX="138dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/PSName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="monospace"
+                    android:text="Shop"
+                    android:textColor="@android:color/background_dark"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="138dp"
+                    tools:layout_editor_absoluteY="43dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    tools:layout_editor_absoluteX="384dp">
+
+                    <TextView
+                        android:id="@+id/PriceTag"
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Price"
+                        android:textColor="@android:color/background_dark"
+                        tools:layout_editor_absoluteX="138dp"
+                        tools:layout_editor_absoluteY="81dp" />
+
+                    <TextView
+                        android:id="@+id/PPrice"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="TextView"
+                        android:textColor="@android:color/background_dark"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/RatingsTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="0"
+                        android:text="Ratings"
+                        android:textColor="@android:color/background_dark" />
+
+                    <RatingBar
+                        android:id="@+id/ratings2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_weight="1"
+                        android:scaleX="0.3"
+                        android:scaleY="0.3"
+
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/totallay"
+
+        >
+
+        <TextView
+
+            android:id="@+id/PQuantity2"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="13dp"
+            android:fontFamily="monospace"
+            android:layout_weight="0"
+            android:text="Quantity"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_weight="2"
+            >
+
+
+        </TextView>
+        <TextView
+            android:id="@+id/PQuantity"
+            android:layout_width="65dp"
+            android:layout_height="38dp"
+            android:fontFamily="monospace"
+            android:text="Kg"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="12dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="3"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="onSub"
+            android:text="-"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="367dp"
+            tools:layout_editor_absoluteY="69dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/ThemeOverlay.MyDarkButton"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="4dp"
+            android:layout_height="40dp"
+            android:layout_weight="4"
+            android:layout_marginRight="5dp"
+            android:onClick="onAdd"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/ThemeOverlay.MyDarkButton"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="188dp"
+        android:text="BUY NOW"
+        android:textSize="20sp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:theme="@style/ThemeOverlay.MyDarkButton"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/NoReviews"
+        android:layout_below="@id/imageButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="No Reviews Yet"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageButton"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:fontFamily="monospace"
+            android:text="Reviews"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/reviewlist"
+            android:layout_width="match_parent"
+            android:layout_height="594dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/Reviews"
+            android:layout_marginBottom="24dp"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
